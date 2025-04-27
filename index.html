@@ -179,19 +179,40 @@
     }
 
     /* Mobile Responsive */
-    @media (max-width: 600px) {
-      .buttons {
-        flex-direction: column;
-        height: auto;
-      }
-      button {
-        height: 150px;
-        font-size: 2rem;
-      }
-      .controls input[type="range"] {
-        width: 120px;
-      }
-    }
+   /* Mobile Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    flex-direction: column;
+    height: auto;
+  }
+  button {
+    height: 120px; /* smaller button height */
+    font-size: 1.5rem; /* smaller font */
+    margin-bottom: 15px;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .controls label {
+    text-align: center;
+  }
+  .controls input[type="range"] {
+    width: 100%;
+  }
+  .theme-toggle {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+}
   </style>
 </head>
 <body>
